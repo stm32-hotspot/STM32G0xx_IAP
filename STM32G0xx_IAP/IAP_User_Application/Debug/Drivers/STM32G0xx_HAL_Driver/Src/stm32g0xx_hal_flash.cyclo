@@ -1,0 +1,14 @@
+stm32g0xx_hal_flash.c:164:19:HAL_FLASH_Program	4
+stm32g0xx_hal_flash.c:226:19:HAL_FLASH_Program_IT	4
+stm32g0xx_hal_flash.c:282:6:HAL_FLASH_IRQHandler	8
+stm32g0xx_hal_flash.c:382:13:HAL_FLASH_EndOfOperationCallback	1
+stm32g0xx_hal_flash.c:400:13:HAL_FLASH_OperationErrorCallback	1
+stm32g0xx_hal_flash.c:433:19:HAL_FLASH_Unlock	3
+stm32g0xx_hal_flash.c:457:19:HAL_FLASH_Lock	2
+stm32g0xx_hal_flash.c:477:19:HAL_FLASH_OB_Unlock	3
+stm32g0xx_hal_flash.c:501:19:HAL_FLASH_OB_Lock	2
+stm32g0xx_hal_flash.c:521:19:HAL_FLASH_OB_Launch	1
+stm32g0xx_hal_flash.c:566:10:HAL_FLASH_GetError	1
+stm32g0xx_hal_flash.c:590:19:FLASH_WaitForLastOperation	6
+stm32g0xx_hal_flash.c:646:13:FLASH_Program_DoubleWord	1
+stm32g0xx_hal_flash.c:668:24:FLASH_Program_Fast	3

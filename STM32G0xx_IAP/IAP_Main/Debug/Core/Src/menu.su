@@ -1,0 +1,3 @@
+../Core/Src/menu.c:35:6:SerialDownload	32	static
+../Core/Src/menu.c:76:6:SerialUpload	16	static
+../Core/Src/menu.c:104:6:Main_Menu	80	static,ignoring_inline_asm
