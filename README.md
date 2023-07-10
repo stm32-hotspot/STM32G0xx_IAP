@@ -52,15 +52,15 @@ In-Application Programming (using USART via YMODEM protocol).
     - STM32G0xx_IAP/IAP_Main/Src/system_STM32G0xx.c  STM32G0xx system source file
 
 
-**IAP implementation on STM32 Nucleo-G071RB**
-![Implementation](Screenshot_1.png)
+**IAP implementation on STM32 Nucleo-G071RB** <br>
+<img src="images/Screenshot_1.png" height="300"> <br>
 (1) User application location address is defined in the flash_if.h file as: 
 #define APPLICATION_ADDRESS           ((uint32_t)0x08008000) <br>
 To modify it, change the default value to the desired one. Note that the application must be linked
 relatively to the new address too.
 
-![Flash Representation](<Screenshot 2023-06-25 161810.png>)
- 
+<br>
+ <img src="images/Screenshot 2023-06-25 161810.png" height="400"> <br>
 **USART AND TERATERM CONFIGURATIONS**
 - Word Length = 8 Bits
 - One Stop Bit
