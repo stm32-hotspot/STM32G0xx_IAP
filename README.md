@@ -1,8 +1,7 @@
 # STM32 in-application programming (IAP) using the USART via YMODEM Protocol
- In-application programming (IAP) is a method of updating firmware or software on a device while it is still in operation.
-
+ In-application programming (IAP) is a method of updating firmware in the end product using a custom bootloader stored in application space.
 ## Example
-This example is based on the [X-CUBE-IAP-USART](https://www.st.com/en/embedded-software/x-cube-iap-usart.html) Fimrware Package designed to work for STM32G073Z_EVAL, STM32L476G_EVAL and STM3210C_EVAL boards.
+This example is based on the [X-CUBE-IAP-USART](https://www.st.com/en/embedded-software/x-cube-iap-usart.html) Firmware Package designed to work for STM32G073Z_EVAL, STM32L476G_EVAL and STM3210C_EVAL boards.
 This firmware package is migrated to work on STM32G0xx devices. 
 
 
@@ -52,15 +51,15 @@ In-Application Programming (using USART via YMODEM protocol).
     - STM32G0xx_IAP/IAP_Main/Src/system_STM32G0xx.c  STM32G0xx system source file
 
 
-**IAP implementation on STM32 Nucleo-G071RB** <br>
-<img src="images/Screenshot_1.png" height="300"> <br>
+**IAP implementation on STM32 Nucleo-G071RB**
+![Implementation](<images/Screenshot_1.png>)
 (1) User application location address is defined in the flash_if.h file as: 
 #define APPLICATION_ADDRESS           ((uint32_t)0x08008000) <br>
 To modify it, change the default value to the desired one. Note that the application must be linked
 relatively to the new address too.
 
-<br>
- <img src="images/Screenshot 2023-06-25 161810.png" height="400"> <br>
+![Flash Representation](<images/Screenshot 2023-06-25 161810.png>)
+ 
 **USART AND TERATERM CONFIGURATIONS**
 - Word Length = 8 Bits
 - One Stop Bit
@@ -114,6 +113,6 @@ The example illustrated is blinky where the board's on-board LED(PA5) will keep 
 **Issues observed on teraterm v4.105** :
 Sometimes teraterm might not work as execpted and not send the .bin file to the program accurately. During such an instance try to relaunch teraterm or  do a mass erase on the microcontrollers flash or restart your PC.
 
-**Caution** : Issues and the pull-requests are **not supported** to submit problems or suggestions related to the software delivered in this repository. The DBFU_L476 example is being delivered as-is, and not necessarily supported by ST.
+**Caution** : Issues and the pull-requests are **not supported** to submit problems or suggestions related to the software delivered in this repository. The STM32G0xx_IAP example is being delivered as-is, and not necessarily supported by ST.
 
 **For any other question** related to the product, the hardware performance or characteristics, the tools, the environment, you can submit it to the **ST Community** on the STM32 MCUs related [page](https://community.st.com/s/topic/0TO0X000000BSqSWAW/stm32-mcus).
